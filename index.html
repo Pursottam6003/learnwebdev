@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--Our html code starts here-->
+<html lang="en">
+<!--Our head tag starts here-->
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewpoint" Content="width=device"intial scale=1.0">
+    <meta http-equiv="X-UA=Compatible" content ="ie-edge">
+
+    <title>This is a title</title>
+
+    <style>
+            
+    small-logo
+    {
+        background-image: url(./im-removebg-preview\ \(1\).png);
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+
+    }
+    /* navigation is styled here */
+    .nav
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #260075;
+        height: 12vh;
+    }
+    .nav ul
+    {
+        display: flex;
+    }
+    .nav li
+    {
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+        text-transform: uppercase;
+        background-color: #260075;
+    }
+    .nav button
+    {
+        background-color:#260075;
+        color: white;
+        width: 100%;
+        font-size: larger;
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+
+    /*.nav li:hover{
+    border-radius: 3px;
+    background-color: #3787BA;
+    }*/
+    .nav button:hover
+    {
+    color: #6b4c4c;
+        background-color: #3787BA;
+    }
+    .tabcontent
+    {
+    display: none;
+    }
+    /*for responsive STYLING */
+
+    .burger
+    {
+     display:none;
+
+    }
+    .line1,.line2,.line3
+    {
+        width: 25px;
+        height: 5px;
+        background-color: black;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .middle
+    {
+        text-align: center;
+    }
+
+    .img
+    {  
+        text-align: center;
+        
+        height: 300px;
+    }
+
+    .test
+    {   padding: 20px;
+        margin-top:30px;
+      
+        background-color: rgb(44, 144, 190);
+        font-family: 'Times New Roman', Times, serif;
+        text-justify: auto;
+        text-align: center;
+        color: white;
+    }
+
+    .btn
+    {   
+        background-color: rgb(71, 180, 71);
+        padding:6px;
+        border:none;
+        cursor:pointer;
+        font-size :13px;
+        color: white;
+        /* width :4px;
+        height: 6px; */
+       
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+
+    a:hover
+    {
+        background-color: rgb(209, 27, 27);
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+
+    #join
+    {  display: block;
+       margin-left: auto;
+       margin-right:auto;
+       max-width: 100%;
+        max-height: 100%;
+        opacity: 0.8;
+       
+    }
+    .information h2
+    {
+        color: blueviolet;
+        text-align: center;
+    }
+
+    .certificate h3
+    {
+        color: rgb(22, 22, 22);
+    }
+
+    #image
+    {
+        scale: 0.5em;
+        width:auto;
+        height:700px;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+    }
+
+    .container
+    {
+        padding: 30px;
+    }
+
+    #jawan
+    {   display:block;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        max-height: 80%;
+        /* height: 300px;
+        width:200px; */
+    }
+
+    .foo 
+    {
+        background-color: rgb(13, 12, 14);
+        color: white;
+    }
+    </style>
+    
+</head>
+<!--Our Body tag starts here -->
+<body>
+        
+    <nav class="nav">
+        <div class="small-logo" id="smllogo"></div>
+        <ul class="link">
+        <li><button class="tablink" onclick="openPage('Home', this, '#3787BA')"  id="defaultOpen"> home </button> </li>
+        <li><button class="tablink" onclick="openPage('Learn', this, '#3787BA')"> learn</button> </li>
+        <li><button class="tablink" onclick="openPage('News', this, '#3787BA')"> news </button></li>
+        <li><button class="tablink" onclick="openPage('Gallery', this, '#3787BA')" > gallery</button</li>
+        </ul>
+        <a class="burger"> 
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </a>
+    </nav>
+
+    <div class="middle">
+        <u><h2>Learn with Us</h2></u>
+    </div> 
+
+    <div class="img"> 
+        <img src="c certificate.jpg" width="700px"alt="examination">
+    </div>
+
+    <br>
+    <div class="test">
+        <h2>
+            Hey ! welcome let us know how much you know about NCC 
+        </h2>
+        <u>
+            <h3>Attempt the quize </h3>
+        </u>
+       
+        <a href="#"class="btn"> Attempt Now</a>    
+    </div>
+
+
+    <div class="information">
+        <h2 >How to join NCC ? </h2>
+        <img src="ncclogo.jpeg"  width="300px" height="200px"id="join">
+        <br>
+
+        <p1>
+            Any Indian student either girl or boy can join NCC ; The junior wing and the senior wing.Here are the details to join the junior and senior wings of NCC
+        </p1>
+
+        <br>
+        <p> <strong>
+            Junior Wing
+        </strong>  minimum  age  to  join  the  NCC  junior  wing  is  13  years. The enrolment period  for  the  training of  junior  wing  is  2  year.  To  join  NCC  the  candidate  needs  to  contact  the  headmaster  or  principle  of  his/her school. If  the  school  of the  candidate  is  not  having  NCC  training  facility  then  the  student  can  contact Commanding  Officer of  the  nearest  NCC  Unit  for  further  guidance. 
+        <p>
+            <strong>
+                Senior  Wing:
+            </strong>
+           To  join  the  senior  wing  the  candidate’s  age  should  be  up  to  26  years. The enrolment period for this  training  is  3  years. To  join  senior  wing  students  need  to  follow  the  same  process  as  mentioned above. Joining  NCC  is  an  easy  process. The  NCC  authorities  also  want  the  youngster  to  be  a  part  of  this  organization. NCC cadets  get various  benefits  from  joining  it  that  positively change  their  personality and  prepare  them  for defence  services.  Further  in the  article,  you  will  get  to  know  detailed  information about  the  Benefits  of  joining NCC. To  get  career  opportunities  in  the  defence  sector,  the  NCC  training  helps  the  aspirant  in  their  selection. In  civil services  also  the  NCC  cadets  get some  relaxation. In defence  & civil  services  career  counselling .</p>
+        </p>
+
+        <p>
+            For more information <a href="https://indiancc.nic.in/how-to-join/">Click Here</a>
+        </p>
+
+        <h2> Benefits of joining NCC</h2>
+        <p>We have already mentioned that joining NCC develops interpersonal skills of the students. NCC training helps students who want to join Indian Arm Forces but it’s not the compulsion to the trainee to join any part of Indian Army after completion of the training. Benefits of NCC also includes self-discipline and problem-solving skills. </p>
+
+        <p>
+            The main benefits of NCC apart from personality developing skills, is the certificate you get. After completion of training and fulfilling other conditions like attendance etc, the candidate gets the certificate from the NCC. Based on the duration of the training, NCC offers three types of certificates. Here is the detail of the NCC certificates. 
+
+            <ul>
+                <li>‘A’ Certificate</li>
+                <li>‘B’ Certificate </li>
+                <li>‘C’ Certificate </li>
+            </ul>
+            <p>Here the detailed <strong>benifit of NCC certificates</strong> </p>
+        </p>
+
+    </div>
+
+    <div class="certificate">
+        
+        <div style="background-image: url('flag2.jpeg'); "id="image">
+            <div class="container">
+
+                <h3>‘A’ Certificate </h3>
+                <p>
+                    NCC ‘A’ certificate is not as useful in government jobs as other NCC certificates. But the benefit of NCC certificate is that it gives you a glance of Indian army and it clears your way to get the certificate ‘B’. Candidates with NCC certificate ‘A’ gets some benefits of marks in all the test of all the wings of Indian Army. The trainee will be eligible to get the ‘A’ certificate after spending 1-2 year of training in the junior wing and must have attended one training camp.
+                </p>
+                <br>
+
+                <h3> ‘B’ Certificate </h3>
+                <p>
+                    A candidate achieves the ‘B’ certificate after attending one training camp and spending 1-2 years in the junior wing.  A candidate must have 75% of attendance in NCC training in the senior wing to get the ‘B’ certificate. The benefits of NCC certificate ‘B’ help the students who want to join Indian Army as ‘Jawan’. The biggest benefit of NCC certificate ‘B’ is that now you can enrol for the ‘C’ certificate of NCC which is very useful. Trainees also get some extra marks in the department of telecommunication and few other public sectors after achieving ‘B’ certificate in NCC. 
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h3>‘C’ Certificate </h3>
+                <p>
+                    To get the ‘C’ certificate the candidate must have got a ‘B’ certificate. He/she must have attended minimum 75% of total training parade. He must be in the third year of training and have attended minimum 2 national pieces of training. 
+                </p>
+    
+                <p>
+                    The ‘C’ certificate is the most important certificate of NCC training.  When we talk about the selection procedure of armed forces, the benefits of NCC certificate ‘C’ always give an advantage to the candidate. Indian Defence Services and Civil Services, both are the preferable career options. The reason behind choosing any one of them as a career is that both have high remuneration and a chance to serve the country directly. People working in defence and civil services get high respect, and this also a reason behind joining these two sectors. When an aspirant has a dream to be a part of any one of these sectors, they will have to make an early start. 
+                </p>
+    
+                <p>
+                    Joining NCC helps the cadets in the recruitment in Indian Defence services. Let’s get more information about it from the below given sections. 
+             
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="forces">
+        <h2>NCC curriculum helping in securing students future</h2>
+        <img src="img6.jpg" alt="army" id="jawan">
+        <h4>Indian Army</h4>
+        <p>
+            <ul>
+                <li>
+                    In every regular course of the Indian Military Academy (IMA), 32 vacancies are reserved for the ‘C’ certified NCC candidates. But to join IMA it’s a must for all the candidates to be declared successful by the Services Selection Board. 
+                </li>
+
+                <li>
+                    The cadets with ‘C’ certificate are exempted from CDS examination conducted by UPSC. But for this, the cadet must have ‘A’ or ‘B’ grade in ‘C’ certificate. 
+                </li>
+                <li>
+                    NCC ‘C’ certification offers you 10–15 bonus marks in paramilitary forces recruitment i.e. BSF, CISF, CRPF, SSB etc.
+                </li>
+                <li>
+                    If you have NCC ‘C’ certificates then your written exam will be waived off for the post of Soldier GD.
+                </li>
+            </ul>
+        </p>
+
+
+
+        <h4>Indian Navy</h4>
+        <p>
+            <ul>
+                <li>
+                    In Indian Navy, the NCC ‘C’ certified candidates get 6 extra marks for sailor’s job and 15 extra marks for Artificer Apprentices. 
+                </li>
+
+                <li>
+                    Up to 9 vacancies in navy are reserved for NCC ‘C’ certified candidates. To get the recruitment done on these vacancies the candidate must have done his/her B.Sc. in physics or maths. B.E. candidates are also eligible for these vacancies. The age group of the candidate must be 19 to 24 years. He/she must have passed by SSB exempted from CDS examination of UPSC. 
+                </li>
+            </ul>
+        </p>
+
+        <h4>Indian Air Force </h4>
+        <p>
+            <ul>
+                <li>
+                    In Air Force, the NCC ‘C’ certified candidates get the advantage of 5 marks.
+                </li>
+
+                <li>
+                    In Pilot course total 10% vacancies are reserved for NCC cadets. 
+                </li>
+            </ul>
+        </p>
+
+
+        <h4>Public Sector</h4>
+
+        <p>
+            <ul>
+                <li>
+                    Many organizations from the public sector give advantages to the cadets with ‘C’ certification like Indian Airlines, Pawan Hans Ltd, The National Small Industries Corp. Ltd. And many more. 
+                </li>
+            </ul>
+
+            Apart of this, many companies from private sector consider the NCC certificates as an advantage. When you mention the NCC certified or achieved NCC ‘C’ certificate in your resume, it gives a hint about your personality. So we would suggest the students should join NCC not only to join Indian Armed Forces but to be a disciplined person. 
+        </p>
+    </div>
+
+    </div>
+</body>
+
+<footer>
+    <div class="foo">
+        
+        <h3>
+            End of the page 
+        </h3>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia repellendus minus, sint, repudiandae impedit reiciendis, odio quas fuga dolores esse sapiente ducimus dolore laudantium nulla numquam neque temporibus ratione.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus aspernatur corrupti veritatis dolorum hic sequi earum illo, animi eos beatae in corporis exercitationem nam suscipit! Tenetur quibusdam commodi assumenda iste earum hic expedita! Soluta at aliquam ullam illo minus modi laborum dolores. Labore, incidunt deleniti eligendi omnis inventore, harum culpa vel hic rerum neque, aut provident!
+
+        <h3>
+            links , facebook instagram ,clubs
+        </h3> 
+    </div>
+</footer>
+
+</html>
